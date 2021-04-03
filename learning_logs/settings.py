@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import os
 from pathlib import Path
-import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -132,21 +131,3 @@ LOGIN_URL = '/users/login/'
 #bootstrap3 configs
 
 BOOTSTRAP3 = {"include_jquery": True}
-
-# configs  for heroku
-django_heroku.settings(locals())
-"""if os.getcwd() == "/app":
-    import dj_database_url
-    databases = {"default": dj_database_url.config(default="postgress://localhost")}
-
-
-#honra do cabeçalho "X-Forwarded-Proto" para request.is_secure()
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-
-#allow all hosts
-ALLOWED_HOSTS = ["*"]
-
-#configs statistical resources 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = "staticfiles"
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"), )"""
