@@ -1,0 +1,11 @@
+{% extends "learning_log\base.html"%}
+
+{% block header %}
+    <div class="jumbotron"><h1>Registre o seu aprendizado.</h1> </div>
+{% endblock header %}
+
+{% block content %}
+    <h2> <a href="{% url 'users:register' %}">Registre uma conta</a> para que você possa criar seus registros de aprendizagem.</h2>
+    <br>
+    <h2>Learning Log Ajuda você a escrever o que aprendeu diariamente como se fosse um diário ou melhor dizendo um diário de aprendizagem! </h2>
+{% endblock content %}

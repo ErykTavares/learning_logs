@@ -1,0 +1,1 @@
+Procfile Web : gunicorn learningLogs.wsgi --log-file-
