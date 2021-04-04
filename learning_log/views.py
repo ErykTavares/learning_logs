@@ -14,7 +14,7 @@ def check_owner(request, topic):
 
 def index(request):
     """pagina inicial"""
-    return render(request, "learning_log\index.html")
+    return render(request, "learning_log\\index.html")
 
 @login_required
 def topics(request):
